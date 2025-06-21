@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="charset" content="utf-8">
+        <title>Fake Google Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                color:black;
+                background-color: white;
+            }
+            header {
+                height:60px;
+            }
+            .container {
+                box-sizing: content-box;
+                margin:0 30px;
+                align-items: flex-start;
+                max-width:1000px;
+            }
+            .search {
+                display: inline;
+                box-sizing: border-box;
+                color: black;
+                font-size:13px;
+                padding-left:10px;
+                outline:none;
+                border: 1px solid rgba(128, 128, 128, 0.452);
+                border-radius: 2px;
+                background-color: #fdfdfd;
+                width:600px;
+                height:30px;
+            }
+            .search:hover {
+                background-color: #fdfdfd;
+            }
+            .button-container {
+                justify-content: flex-end;
+            }
+            button {
+                width:115px;
+                height:30px;
+                border-radius: 0;
+                border: 1px solid #2f5bb7;
+                background-color: #357ae8;
+            }
+            button:hover {
+                background-color: rgb(57, 104, 206);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p class="logotext"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png"></p>
+        </header>
+        <hr>
+        <div class="container">
+            <h2 class="advanced_search">
+                Advanced Search</h2>
+            <div class="advanced-container">
+                <p>Locate pages with...</p>    
+                <form id="searchform" action="https://www.google.com/search">
+                    <span class="input-text">all this words: <input class="search" name="as_q"></span>
+                    <span class="input-text">this exact word or phrase: <input class="search" name="as_epq"></span>
+                    <span class="input-text">any of these words: <input class="search" name="as_oq"></span>
+                    <span class="input-text">none of these words: <input class="search" name="as_eq"></span>  
+                </form>
+                    
+                <div class="button-container">
+                    <button form="searchform" type="submit">Advanced Search</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -4,19 +4,23 @@
         <meta name="charset" content="utf-8">
         <title>Fake Google Search</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            nav {
+                height: 15px;
+            }
+        </style>
     </head>
     <body>
         <header>
             <nav>
-                <a href="advanced_search.html">Advanced</a>
-                <a href="image_search.html">Images</a>
             </nav>
         </header>
         <div class="container">
-            <h1 class="title">NGoogle</h1>
+            <h1 class="title">
+                NGoogle <span class="images">Images</span></h1>
             <form id="searchform" action="https://www.google.com/search">
                 <input class="search" name="q">
-                <input name="sca_esv" value="af9f7f05e65c0a50" type="hidden">
+                <input name="udm" value="2" type="hidden">
             </form>
                 
             <div class="button-container">
